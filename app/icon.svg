@@ -1,10 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
   <defs>
-    <linearGradient id="nsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#111827"/>
-      <stop offset="100%" stop-color="#374151"/>
+    <linearGradient id="bmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6D4A2E"/>
+      <stop offset="100%" stop-color="#8B5E3C"/>
+    </linearGradient>
+    <linearGradient id="shineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C4A882" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#D9C4A8" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#C4A882" stop-opacity="0.3"/>
     </linearGradient>
   </defs>
-  <rect width="128" height="128" rx="28" fill="url(#nsGrad)"/>
-  <text x="64" y="82" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="56" fill="#f9fafb">N</text>
+  <!-- Background -->
+  <rect width="128" height="128" rx="24" fill="url(#bmGrad)"/>
+  <!-- Zinc shine overlay -->
+  <rect width="128" height="128" rx="24" fill="url(#shineGrad)"/>
+  <!-- Beer mug silhouette -->
+  <rect x="38" y="42" width="36" height="44" rx="4" fill="none" stroke="#FAF6F0" stroke-width="4"/>
+  <path d="M74 52 Q88 52 88 64 Q88 76 74 76" fill="none" stroke="#FAF6F0" stroke-width="4" stroke-linecap="round"/>
+  <!-- Foam -->
+  <ellipse cx="56" cy="42" rx="18" ry="6" fill="#FAF6F0" opacity="0.9"/>
+  <!-- Letter M (Métronome) -->
+  <text x="64" y="112" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="14" fill="#FAF6F0" opacity="0.6" letter-spacing="1">MÉTRONOME</text>
 </svg>
