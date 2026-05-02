@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Mentions légales | Brasserie Métronome",
@@ -67,7 +68,7 @@ export default function MentionsLegalesPage() {
             <h2>4. Données personnelles</h2>
             <p>
               La collecte et le traitement des données personnelles des utilisateurs sont détaillés dans notre{" "}
-              <a href="/politique-confidentialite">Politique de confidentialité</a>.
+              <Link href="/politique-confidentialite">Politique de confidentialité</Link>.
               Conformément au RGPD et à la loi Informatique et Libertés, vous disposez d&apos;un droit d&apos;accès,
               de rectification et de suppression de vos données.
             </p>
